@@ -169,10 +169,10 @@ function computeProjected3DPayout(
   return totalPayout;
 }
 
-// For 3D: pick a number (000-999) where projected payout stays within 60% of pool
+// For 3D: pick a number (000-999) where projected payout stays within 80% of pool
 const generate3DSmartNumber = (bets: { number: number; bet_type: string; total_amt: number }[]): number => {
   const totalPool = bets.reduce((s, b) => s + b.total_amt, 0);
-  const cap = Math.floor(totalPool * 0.60);
+  const cap = Math.floor(totalPool * 0.80);
 
   for (let attempt = 0; attempt < 500; attempt++) {
     const n = Math.floor(Math.random() * 1000);
@@ -390,7 +390,7 @@ const AdminSuperPanel: React.FC<Props> = ({ currentDrawId, series }) => {
       const resultNum = parseInt(currentResult, 10);
       if (isNaN(resultNum)) return;
       const totalPool = modeBets.reduce((s, b) => s + b.total_amt, 0);
-      const cap = Math.floor(totalPool * 0.60);
+      const cap = Math.floor(totalPool * 0.80);
       const projected = computeProjected3DPayout(resultNum, modeBets);
       if (projected > cap) {
         const n = generate3DSmartNumber(modeBets);
@@ -616,7 +616,7 @@ const AdminSuperPanel: React.FC<Props> = ({ currentDrawId, series }) => {
     }
 
     const { projectedWinning, totalPool } = computeProjectedWinning2D(betData, effNums);
-    const cap = Math.floor(totalPool * 0.60);
+    const cap = Math.floor(totalPool * 0.80);
 
     if (projectedWinning > cap) {
       const generated: Record<string, number[]> = {};
@@ -813,7 +813,7 @@ const AdminSuperPanel: React.FC<Props> = ({ currentDrawId, series }) => {
                             </div>
                             <div>
                               <div className="text-gray-400">Winning</div>
-                              <div className={`font-bold ${modeWinning > Math.floor(modePool * 0.60) ? 'text-red-600' : 'text-green-600'}`}>{modeWinning} pts</div>
+                              <div className={`font-bold ${modeWinning > Math.floor(modePool * 0.80) ? 'text-red-600' : 'text-green-600'}`}>{modeWinning} pts</div>
                             </div>
                             <div>
                               <div className="text-gray-400">Admin</div>
@@ -890,13 +890,13 @@ const AdminSuperPanel: React.FC<Props> = ({ currentDrawId, series }) => {
                           if (isNaN(resultNum) || modeBets.length === 0) return null;
                           const projected = computeProjected3DPayout(resultNum, modeBets);
                           const modePool = modeBets.reduce((s, b) => s + b.total_amt, 0);
-                          const cap = Math.floor(modePool * 0.60);
+                          const cap = Math.floor(modePool * 0.80);
                           const over = projected > cap;
                           return (
                             <div className={`text-xs px-2 py-1 rounded mt-1 ${over ? 'bg-red-100 text-red-700 font-bold' : 'bg-green-50 text-green-700'}`}>
                               Projected payout: {projected} pts
                               {over
-                                ? ` ⚠ OVER 60% cap (${cap} pts) — change result`
+                                ? ` ⚠ OVER 80% cap (${cap} pts) — change result`
                                 : ` ✓ within cap (${cap} pts)`}
                             </div>
                           );
