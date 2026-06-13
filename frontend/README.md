@@ -1,6 +1,6 @@
-# Shree Loto - Frontend
+# J.P - Frontend
 
-A full-stack lottery website similar to Shree Loto with real-time draws, number selection grids, and user account management.
+A full-stack lottery website similar to J.P with real-time draws, number selection grids, and user account management.
 
 ## Features
 

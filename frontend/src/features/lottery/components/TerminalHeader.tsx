@@ -11,8 +11,8 @@ const TerminalHeader: React.FC<TerminalHeaderProps> = ({ freePoints, lastDraw, g
   return (
     <div className="lt-header">
       <div className="lt-logo">
-        <div className="lt-logo-circle" style={{ overflow: 'hidden', padding: 0, border: 'none', background: 'transparent', height: '70px', width: '70px' }}>
-          <img src="/logo.jpg" alt="Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+        <div className="lt-logo-circle" style={{ overflow: 'hidden', padding: 0, border: 'none', background: 'transparent', height: '100px', width: '100px' }}>
+          <img src="/logo.png" alt="J.P Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
         </div>
       </div>
 

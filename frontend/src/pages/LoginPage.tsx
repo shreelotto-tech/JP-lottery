@@ -91,8 +91,8 @@ export const LoginPage: React.FC = () => {
           border-bottom: 2px solid #1a1018;
         }
         .lp-logo-circle {
-          width: 72px;
-          height: 72px;
+          width: 120px;
+          height: 120px;
           border-radius: 50%;
           background: #1e1020;
           border: 2px solid #3a2040;
