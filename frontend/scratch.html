@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hp-date {
+  height: 40px;
+  min-width: 240px;
+  padding: 0 12px;
+  border: 2px solid #7777bb;
+  border-radius: 3px;
+  font-size: 12px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+.hp-date:focus {
+  outline: none;
+  border-color: #3333cc;
+  box-shadow: 0 0 3px rgba(50, 50, 200, 0.25);
+}
+.hp-date-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.hp-date-hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.hp-date-hidden:focus + .hp-date-display {
+  outline: none;
+  border-color: #3333cc;
+  box-shadow: 0 0 3px rgba(50, 50, 200, 0.25);
+}
+</style>
+</head>
+<body>
+<div class="hp-date-wrapper">
+  <input class="hp-date-hidden" type="date" onchange="document.getElementById('disp').value = this.value.split('-').reverse().join('/')" />
+  <input id="disp" class="hp-date hp-date-display" type="text" placeholder="dd/mm/yyyy" readonly />
+</div>
+</body>
+</html>
