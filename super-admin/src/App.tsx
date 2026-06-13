@@ -11,7 +11,7 @@ function App() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === '202690' && password === '202690') {
+    if (username === '996743' && password === '202548') {
       localStorage.setItem('super_admin_auth', 'true');
       setIsLoggedIn(true);
       setError('');
