@@ -48,7 +48,7 @@ export function generate3DReceiptHtml(params: {
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>Shree Lotto</title>
+<title>J.P</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <style>
@@ -76,7 +76,7 @@ body{font-family:Arial,sans-serif;background:#fff;color:#111}
 </head>
 <body>
 <div class="receipt">
-  <div class="title">Shree Lotto 3D</div>
+  <div class="title">J.P 3D</div>
   <div class="sub">(Fun Coupon valid for 10 Days)</div>
   <div class="sub">Free Coupon for Fun Only, ${modesCount} Series</div>
   <div class="meta" style="margin-top:4px">

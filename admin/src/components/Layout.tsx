@@ -143,10 +143,10 @@ export default function Layout({ children }: LayoutProps) {
         <aside style={{ width: sidebarWidth, flexShrink: 0, background: COLORS.sidebar, color: '#fff', display: 'flex', flexDirection: 'column', transition: 'width 0.2s ease', overflow: 'hidden' }}>
           {/* Logo */}
           <div style={{ padding: sidebarCollapsed ? '16px 8px' : '20px 16px', display: 'flex', alignItems: 'center', gap: 12, borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
-            <div style={{ width: 44, height: 44, minWidth: 44, borderRadius: '50%', background: 'linear-gradient(135deg, #ffd54f 0%, #ffb300 40%, #8d6e63 100%)', boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.4), 0 2px 8px rgba(0,0,0,0.35)', border: '2px solid rgba(255,255,255,0.25)' }} title="Shree Lotto" />
+            <img src="/logo.png" alt="J.P Logo" style={{ width: 44, height: 44, minWidth: 44, borderRadius: '50%', objectFit: 'cover', border: '2px solid rgba(255,255,255,0.25)' }} />
             {!sidebarCollapsed && (
-              <div style={{ fontWeight: 700, fontStyle: 'italic', color: COLORS.accentRed, fontSize: 18, lineHeight: 1.15, whiteSpace: 'nowrap' }}>
-                Shree Lotto
+              <div style={{ fontWeight: 900, fontStyle: 'italic', color: COLORS.accentRed, fontSize: 18, lineHeight: 1.15, whiteSpace: 'nowrap' }}>
+                J.P
               </div>
             )}
           </div>

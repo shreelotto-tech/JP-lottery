@@ -238,9 +238,9 @@ export const LoginPage: React.FC = () => {
           <div className="lp-card terminal-card">
             <div className="lp-top">
               <div className="lp-logo-circle" style={{ overflow: 'hidden', padding: 0, border: 'none', background: 'transparent' }}>
-                <img src="/logo.jpg" alt="Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+                <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
               </div>
-              <h1 className="lp-title">SHREE LOTTO</h1>
+              <h1 className="lp-title" style={{ fontWeight: 900 }}>J.P</h1>
               <p className="lp-subtitle">Login Panel</p>
             </div>
 

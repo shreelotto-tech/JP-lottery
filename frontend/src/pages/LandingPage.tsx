@@ -146,10 +146,10 @@ export const LandingPage: React.FC = () => {
       <div className="land-root">
         <div className="land-center">
           <div className="land-logo-circle" style={{ overflow: 'hidden', padding: 0, border: 'none', background: 'transparent' }}>
-            <img src="/logo.jpg" alt="Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
+            <img src="/logo.png" alt="Logo" style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover' }} />
           </div>
 
-          <h1 className="land-title">SHREE LOTTO</h1>
+          <h1 className="land-title" style={{ fontWeight: 900 }}>J.P</h1>
           <p className="land-subtitle">Play only for fun</p>
           <div className="land-divider" />
 

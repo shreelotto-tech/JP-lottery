@@ -90,7 +90,7 @@ export default function SignInPage() {
       <div style={styles.glowRight} aria-hidden />
 
       <form style={styles.card} onSubmit={handleSubmit}>
-        <p style={styles.brand}>Shree Lotto Admin</p>
+        <p style={{ ...styles.brand, fontWeight: 900 }}>J.P Admin</p>
         <h1 style={styles.heading}>Sign In</h1>
         <p style={styles.subheading}>Continue to your dashboard</p>
 

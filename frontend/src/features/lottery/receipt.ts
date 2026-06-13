@@ -173,7 +173,7 @@ export const generateReceiptHtml = ({
   </head>
   <body>
     <div class="receipt">
-      <div class="title">Shree Lotto</div>
+      <div class="title">J.P</div>
       <div class="subtitle">Fun Coupon valid for 10 Days</div>
       <div class="subtitle">Free Coupon for Fun Only</div>
 
@@ -218,7 +218,7 @@ export const generateReceiptHtml = ({
     <script>
       var RECEIPT_TEXT = ${JSON.stringify(
         [
-          '🎟 Shree Lotto Receipt',
+          '🎟 J.P Receipt',
           `Desk: ${desk}`,
           ...(drawText ? [`Draw: ${drawText}`] : []),
           ...(selectedGroupLabels && isMeaningfulLabel(selectedGroupLabels) ? [selectedGroupLabels] : []),
@@ -345,7 +345,7 @@ export const generateWinReceiptHtml = ({
   </head>
   <body>
     <div class="receipt">
-      <div class="title">Shree Lotto</div>
+      <div class="title">J.P</div>
       <div class="win-badge">WIN RECEIPT</div>
       <div class="meta">
         <div>Draw: ${drawDate} &nbsp;|&nbsp; ${slotEndTime}</div>
@@ -440,7 +440,7 @@ export const generateWin3DReceiptHtml = ({
   </head>
   <body>
     <div class="receipt">
-      <div class="title">Shree Lotto <span class="game-badge">3D</span></div>
+      <div class="title">J.P <span class="game-badge">3D</span></div>
       <div class="win-badge">&#9733; WIN RECEIPT</div>
       <div class="meta">
         <div>Draw: ${drawDate} &nbsp;|&nbsp; ${slotEndTime}</div>
@@ -584,7 +584,7 @@ export const openCombinedReceiptWindow = (receiptsParams: ReceiptParams[]): bool
 
   const shareAllScript = `
 <script>
-  var ALL_RECEIPT_TEXT = ${JSON.stringify(`🎟 Shree Lotto Receipts\n\n${combinedText}`)};
+  var ALL_RECEIPT_TEXT = ${JSON.stringify(`🎟 J.P Receipts\n\n${combinedText}`)};
   async function shareAll() {
     var allActions = document.querySelectorAll('.actions');
     allActions.forEach(function(el) { el.style.display = 'none'; });

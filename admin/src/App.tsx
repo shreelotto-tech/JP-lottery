@@ -502,23 +502,22 @@ export default function App() {
               borderBottom: '1px solid rgba(255,255,255,0.08)',
             }}
           >
-            <div
+            <img
+              src="/logo.png"
+              alt="J.P Logo"
               style={{
                 width: 44,
                 height: 44,
                 minWidth: 44,
                 borderRadius: '50%',
-                background:
-                  'linear-gradient(135deg, #ffd54f 0%, #ffb300 40%, #8d6e63 100%)',
-                boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.4), 0 2px 8px rgba(0,0,0,0.35)',
+                objectFit: 'cover',
                 border: '2px solid rgba(255,255,255,0.25)',
               }}
-              title="Shree Lotto"
             />
             {!sidebarCollapsed && (
               <div
                 style={{
-                  fontWeight: 700,
+                  fontWeight: 900,
                   fontStyle: 'italic',
                   color: COLORS.accentRed,
                   fontSize: 18,
@@ -526,7 +525,7 @@ export default function App() {
                   whiteSpace: 'nowrap',
                 }}
               >
-                Shree Lotto
+                J.P
               </div>
             )}
           </div>
